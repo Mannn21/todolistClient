@@ -1,0 +1,25 @@
+.edit {
+    color: rgb(15, 148, 201);
+    font-size: 20px;
+    cursor: pointer;
+    margin: auto;
+}
+
+.delete {
+    color: rgb(197, 11, 11);
+    font-size: 20px;
+    cursor: pointer;
+    margin: auto;
+}
+
+.check {
+    color: green;
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+.timer {
+    color: orangered;
+    font-size: 20px;
+    margin-right: 8px;
+}
