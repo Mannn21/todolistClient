@@ -4,14 +4,12 @@ export const Container = styled.div`
 	width: 100%;
 	min-height: 100vh;
 	box-sizing: border-box;
-	/* border: 1px solid blue; */
 	margin-top: 20px;
 `;
 
 export const Wrapper = styled.div`
 	width: 100%;
 	height: auto;
-	/* border: 1px solid red; */
 	display: flex;
 	justify-content: center;
 	align-items: center;

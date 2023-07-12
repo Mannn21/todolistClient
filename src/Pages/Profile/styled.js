@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-	height: calc(100vh - 80px);
+	height: 100vh;
 	width: 100%;
 	box-sizing: border-box;
 `;
 
 export const Wrapper = styled.div`
-	height: 100%;
+	height: calc(100% - 95px);
 	width: 100%;
 	display: flex;
 	flex-direction: row;
@@ -23,15 +23,9 @@ export const ProfileContainer = styled.section`
 	padding: 15px 30px;
 `;
 
-export const StatisticWrapper = styled.section`
+export const EditContainer = styled.section`
 	height: 100%;
 	width: 70%;
-	padding: 5px 20px;
+	padding: 15px 20px;
 `;
-
-export const ChartWrapper = styled.section`
-	height: 55%;
-	width: 100%;
-`;
-
 // ==================== END RIGHT STYLE =====================

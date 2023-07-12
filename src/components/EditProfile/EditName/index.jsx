@@ -50,38 +50,55 @@ const EditName = () => {
 			}}>
 			{({ errors, touched }) => (
 				<Form className={styled.form}>
-					<div className={styled["input-wrapper"]}>
-						<label htmlFor="name" className={styled.label}>
-							Masukkan Nama Baru :
-						</label>
-						<div className={styled["input-box"]}>
-							<Field
-								// ref={nameRef}
-								name="name"
-								type="text"
-								id="name"
-								className={styled.input}
-							/>
-							{errors.name && touched.name ? (
-								<span className={styled.error}>*{errors.name}</span>
-							) : null}
+					<div className={styled["form-container"]}>
+						<div className={styled["input-wrapper"]}>
+							<label htmlFor="name" className={styled.label}>
+								Email Anda :
+							</label>
+							<div className={styled["input-box"]}>
+								<Field
+									name="email"
+									type="email"
+									id="email"
+									value={email}
+									disable
+									className={styled.input}
+								/>
+							</div>
 						</div>
-					</div>
-					<div className={styled["input-wrapper"]}>
-						<label htmlFor="password" className={styled.label}>
-							Masukkan Password :
-						</label>
-						<div className={styled["input-box"]}>
-							<Field
-								// ref={passwordRef}
-								name="password"
-								type="password"
-								id="password"
-								className={styled.input}
-							/>
-							{errors.password && touched.password ? (
-								<span className={styled.error}>*{errors.password}</span>
-							) : null}
+						<div className={styled["input-wrapper"]}>
+							<label htmlFor="name" className={styled.label}>
+								Masukkan Nama Baru :
+							</label>
+							<div className={styled["input-box"]}>
+								<Field
+									// ref={nameRef}
+									name="name"
+									type="text"
+									id="name"
+									className={styled.input}
+								/>
+								{errors.name && touched.name ? (
+									<span className={styled.error}>*{errors.name}</span>
+								) : null}
+							</div>
+						</div>
+						<div className={styled["input-wrapper"]}>
+							<label htmlFor="password" className={styled.label}>
+								Masukkan Password :
+							</label>
+							<div className={styled["input-box"]}>
+								<Field
+									// ref={passwordRef}
+									name="password"
+									type="password"
+									id="password"
+									className={styled.input}
+								/>
+								{errors.password && touched.password ? (
+									<span className={styled.error}>*{errors.password}</span>
+								) : null}
+							</div>
 						</div>
 					</div>
 					<button type="submit" className={styled.button}>

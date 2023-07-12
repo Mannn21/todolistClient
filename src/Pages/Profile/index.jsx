@@ -2,14 +2,12 @@ import React, { useEffect } from "react";
 import Navbar from "../../components/Navbar";
 import EditProfile from "../../components/EditProfile";
 import UserProfile from "../../components/UserProfile";
-import StatisticUser from "../../components/StatisticUser";
 import { useToken } from "../../utils/TokenContext.jsx";
 import {
 	Container,
 	Wrapper,
 	ProfileContainer,
-	StatisticWrapper,
-	ChartWrapper,
+	EditContainer,
 } from "./styled.js";
 
 const Profile = () => {
@@ -32,12 +30,9 @@ const Profile = () => {
 						<ProfileContainer>
 							<UserProfile />
 						</ProfileContainer>
-						<StatisticWrapper>
+						<EditContainer>
 							<EditProfile />
-							<ChartWrapper>
-								<StatisticUser />
-							</ChartWrapper>
-						</StatisticWrapper>
+						</EditContainer>
 					</Wrapper>
 				</Container>
 			)}

@@ -211,7 +211,7 @@ const TableRow = () => {
 												id="updateTitle"
 												placeholder="Input New Title"
 												required
-												onChange={e => handleTitleUpdate(e.target.value)}
+												onBlur={e => handleTitleUpdate(e.target.value)}
 											/>
 										</div>
 										<DropdownWrapper>

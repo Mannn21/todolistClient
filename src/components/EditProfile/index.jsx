@@ -4,29 +4,32 @@ import EditPassword from "./EditPassword";
 import {
 	EditWrapper,
 	EditHeaderWrapper,
+	EditHeader,
 	EditModeWrapper,
 	EditMode,
 	Mode,
 	ModeWrapper,
+	FormWrapper
 } from "./styled.js";
 
 const EditProfile = () => {
-    const [editState, setEditState] = useState(true);
+	const [editState, setEditState] = useState(true);
 	return (
 		<EditWrapper>
 			<EditHeaderWrapper>
-				<h1>Edit Profile</h1>
+				<EditHeader>Edit Profile</EditHeader>
 			</EditHeaderWrapper>
-			{editState === true ? (
-				<>
-					<EditName />
-				</>
-			) : (
-				<>
-					<EditPassword />
-				</>
-			)}
-
+			<FormWrapper>
+				{editState === true ? (
+					<>
+						<EditName />
+					</>
+				) : (
+					<>
+						<EditPassword />
+					</>
+				)}
+			</FormWrapper>
 			<EditModeWrapper>
 				<ModeWrapper>
 					<EditMode>Option{" : "}</EditMode>
