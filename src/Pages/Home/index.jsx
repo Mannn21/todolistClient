@@ -4,6 +4,7 @@ import Header from "../../components/Header";
 import Action from "../../components/Action";
 import TableActivities from "../../components/TableActivities";
 import { useToken } from "../../utils/TokenContext.jsx";
+import {Container, Wrapper} from "./styled.js"
 
 const Home = () => {
 	const { tokenData } = useToken();
@@ -17,18 +18,19 @@ const Home = () => {
 		fetchData();
 	}, [getRefreshToken]);
 
-
 	return (
 		<>
 			{!token ? (
 				<></>
 			) : (
-				<div>
+				<Container>
 					<Navbar />
-					<Header />
-					<Action />
-					<TableActivities />
-				</div>
+					<Wrapper>
+						<Header />
+						<Action />
+						<TableActivities />
+					</Wrapper>
+				</Container>
 			)}
 		</>
 	);

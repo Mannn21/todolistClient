@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	margin-top: 20px;
+	margin-top: 80px;
 `;
 
 // ===================== LEFT STYLE ====================

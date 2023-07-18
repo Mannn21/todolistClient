@@ -9,6 +9,5 @@ export const Container = styled.div`
 export const Wrapper = styled.div`
     margin-top: 80px;
 	width: 100%;
-	height: calc(100vh - 83px);
 	box-sizing: border-box;
 `;

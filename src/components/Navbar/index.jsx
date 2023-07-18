@@ -24,7 +24,7 @@ export default function NavbarWithCTAButton() {
 
 	return (
 		<Navbar fluid rounded className={styled.container}>
-			<Link to="/dashboard">
+			<Link to="/dashboard" className="flex flex-row">
 				<img alt="ToList" className="mr-3 h-6 sm:h-9" src="/icon.svg" />
 				<span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
 					ToList App
